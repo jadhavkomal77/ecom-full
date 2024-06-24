@@ -2,8 +2,8 @@ const router = require("express").Router()
 const publicController = require("./../controllers/public.controller")
 
 router
-    .get("/Product", publicController.publicGetAllProduct)
-    .get("/Product/:id", publicController.publicGetProductDetails)
+    .get("/product", publicController.publicGetAllProduct)
+    .get("/product-details/:id", publicController.publicGetProductDetails)
 
 
 module.exports = router
