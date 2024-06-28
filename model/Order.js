@@ -2,16 +2,16 @@ const mongoose = require("mongoose")
 
 const orderSchema = new mongoose.Schema({
     user: { type: mongoose.Types.ObjectId, ref: "user", required: true },
-    products:[
+    products: [
         {
-            product:{
-                type:mongoose.Types.ObjectId,
-                ref:"product",
-                required:true
+            product: {
+                type: mongoose.Types.ObjectId,
+                ref: "product",
+                required: true
             },
-            qty:{
-                type:Number,
-                required:true
+            qty: {
+                type: Number,
+                required: true
             },
         }
     ]
